@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- okreslenie typu kodu dla kompilatora -->
+<html lang="en"> <!-- jezyk dokumentu  -->
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="login.css" />
-  <title>Login</title>
+<meta charset="UTF-8"> <!-- zestaw znakow -->
+  <link rel="stylesheet" type="text/css" href="login.css" /> <!-- polaczenie css z html -->
+  <title>Login</title> <!-- wyswietlana nazwa na naglowku strony -->
 </head>
 
-<body>
+<body> <!-- poczatek zawartosci strony -->
 
   
+<!-- przypisywanie id w celu pozniejszej identyfikacji przy uzyciu divow -->
+  <main id="main-holder"> <!-- przypisanie id do main contentu -->
+    <h1 id="login-header">Login</h1> <!-- header1 z przypisanym id wyswietlajacy "Login" -->
 
-  <main id="main-holder">
-    <h1 id="login-header">Login</h1>
-
-    <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-      <input type="submit" value="Login" id="login-form-submit">
+    <form id="login-form"> <!-- tworzenie form do pobrania inputu od usera -->
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> <!-- utworzenie pola typu "text" o nazwie "username" dla pliku .js, id"username-field", klasie "login-form-field", wyswietlajacego instrukcje dla usera informujaca jakiej informacji oczekuje -->
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"> <!-- wszystko w ten sam sposob co powyzej z innymi danymi + password haszujacy wprowadzane znaki -->
+      <input type="submit" value="Login" id="login-form-submit"> <!-- tworzy przycisk submitujacy podane przez usera dane, wyswietlajacy tekst "Login", o id "login-form-submit" -->
     </form>
 
   </main>
 
-  <script src="login.js"></script>
+  <script src="login.js"></script> <!-- przylaczenie skryptu .js do html -->
 
-</body>
-</html>
+</body> <!-- koniec zawartosci strony -->
+</html> <!-- koniec pliku html -->
